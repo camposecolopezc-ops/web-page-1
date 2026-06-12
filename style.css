@@ -1,0 +1,120 @@
+/* Reseteo básico y tipografía limpia */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Background suave y limpio */
+body {
+    background-color: #f8f9fa; /* Gris muy claro */
+    color: #333333;
+    line-height: 1.6;
+}
+
+/* --- Layout con Flexbox (Obligatorio) --- */
+.contenedor-flex {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 30px;
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05); /* Sombra sutil para separar del fondo */
+}
+
+/* --- Navegación --- */
+.barra-navegacion {
+    background-color: #003057; /* Azul profundo elegante */
+    padding: 15px 0;
+    text-align: center;
+}
+
+.barra-navegacion ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.barra-navegacion a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 8px 16px;
+    border-radius: 6px;
+    transition: background 0.3s;
+}
+
+.barra-navegacion a:hover {
+    background-color: #005091; /* Azul más claro al pasar el mouse */
+}
+
+/* --- Textos (Properties) --- */
+h1 {
+    font-size: 2.5rem;
+    color: #003057;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+h2 {
+    font-size: 1.5rem;
+    color: #666666;
+    font-weight: 400;
+    margin-bottom: 25px;
+    text-align: center;
+}
+
+h3 {
+    margin-top: 25px;
+    margin-bottom: 15px;
+    color: #d32f2f; /* Toque de color vibrante (rojo) */
+}
+
+p {
+    margin-bottom: 20px;
+    text-align: justify;
+}
+
+/* --- Imágenes --- */
+.imagen-destacada {
+    width: 100%;
+    max-width: 700px;
+    height: auto;
+    border-radius: 8px; /* Borde redondeado suave */
+    border: 3px solid #e0e0e0; /* Border property requerida */
+    margin: 20px 0;
+    display: block;
+}
+
+/* --- Botones --- */
+.btn-primario {
+    background-color: #d32f2f;
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    font-size: 1rem;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+    margin-top: 15px;
+    transition: transform 0.2s;
+}
+
+.btn-primario:hover {
+    transform: translateY(-2px); /* Pequeña animación */
+    background-color: #b71c1c;
+}
+
+/* --- Footer --- */
+footer {
+    background-color: #333333;
+    color: #ffffff;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+}
